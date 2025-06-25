@@ -1,0 +1,4 @@
+#!/usr/bin/bash
+
+echo "Foos and bars"
+
