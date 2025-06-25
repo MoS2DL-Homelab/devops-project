@@ -10,5 +10,9 @@
     "forwardPorts": [
         "22111",
         "22112"
-    ]
+    ],
+    "mounts": [
+        "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached,readonly"
+    ],
+    "postCreateCommand": "chmod 600 ~/.ssh/id_* 2>/dev/null || true; chmod 644 ~/.ssh/*.pub 2>/dev/null || true; scripts/setup"
 }
