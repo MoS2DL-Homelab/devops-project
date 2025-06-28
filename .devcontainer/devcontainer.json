@@ -3,7 +3,6 @@
     "context": "..",
     "dockerfile": "Dockerfile"
   },
-  "postCreateCommand": "scripts/setup",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {},
     "ghcr.io/duduribeiro/devcontainer-features/tmux:1": {
@@ -18,7 +17,11 @@
   ],
   "mounts": [
     "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached,readonly"
+    // "source=${localEnv:SSH_AUTH_SOCK},target=/ssh-agent,type=bind,consitency=cached"
   ],
+  "containerEnv": {
+    "SSH_AUTH_SOCK": "/ssh-agent"
+  },
   "postCreateCommand": "chmod 600 ~/.ssh/id_* 2>/dev/null || true; chmod 644 ~/.ssh/*.pub 2>/dev/null || true; scripts/setup",
   "remoteEnv": {
     "GITHUB_TOKEN": "${localEnv:GITHUB_TOKEN}"
