@@ -78,15 +78,18 @@ jobs:
           path: code-coverage-results.md
 
   scan_docker:
-    name: Scan Docker image
-    needs: test
-    if: ${{ needs.test.ouputs.should_run == 'true' }}
+    name: Scan Docker image using Trivy
+    needs: [check_paths, test]
+    if: ${{ needs.check_paths.outputs.should_run == 'true' }}
     runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: ./src/backend
 
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
       - name: Build image from Dockerfile
         run: docker build -t backend:${{ github.sha }} .
       - name: Run Trivy vulnerability scanner
