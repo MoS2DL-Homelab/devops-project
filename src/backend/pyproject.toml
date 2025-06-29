@@ -5,12 +5,8 @@ description = "Backend API for tracking study time for DevOps certifications"
 readme = "README.md"
 authors = [{ name = "Daniel Lindroth", email = "daniel.lindroth@noreply.org" }]
 requires-python = ">=3.13"
-dependencies = [
-    "fastapi>=0.115.13",
-    "httpx>=0.28.1",
-    "ruff>=0.12.1",
-    "uvicorn>=0.34.3",
-]
+
+dependencies = ["fastapi>=0.115.13", "httpx>=0.28.1", "uvicorn>=0.34.3"]
 
 [project.scripts]
 study-tracker-api = "backend.main:main"
@@ -21,3 +17,10 @@ packages = ["src/backend"]
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.1",
+    "pytest-asyncio>=1.0.0",
+]
+lint = ["ruff>=0.12.1"]
