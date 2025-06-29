@@ -26,3 +26,6 @@ dev = [
     "pytest-cov>=6.2.1",
     "responses>=0.25.7",
 ]
+lint = [
+    "ruff>=0.12.1",
+]
