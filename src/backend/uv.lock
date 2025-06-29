@@ -318,12 +318,12 @@ version = "0.0.0"
 source = { editable = "." }
 dependencies = [
     { name = "fastapi" },
-    { name = "httpx" },
     { name = "uvicorn" },
 ]
 
 [package.dev-dependencies]
 dev = [
+    { name = "httpx" },
     { name = "pytest" },
     { name = "pytest-asyncio" },
     { name = "pytest-cov" },
@@ -335,12 +335,12 @@ lint = [
 [package.metadata]
 requires-dist = [
     { name = "fastapi", specifier = ">=0.115.13" },
-    { name = "httpx", specifier = ">=0.28.1" },
     { name = "uvicorn", specifier = ">=0.34.3" },
 ]
 
 [package.metadata.requires-dev]
 dev = [
+    { name = "httpx", specifier = ">=0.28.1" },
     { name = "pytest", specifier = ">=8.4.1" },
     { name = "pytest-asyncio", specifier = ">=1.0.0" },
     { name = "pytest-cov", specifier = ">=6.2.1" },
