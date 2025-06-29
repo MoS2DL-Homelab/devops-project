@@ -41,7 +41,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          uv sync --locked --dev
+          uv sync --locked --dev --group lint
 
       - name: Lint with Ruff
         run: |
