@@ -274,6 +274,7 @@ source = { editable = "." }
 dependencies = [
     { name = "fastapi" },
     { name = "httpx" },
+    { name = "ruff" },
     { name = "uvicorn" },
 ]
 
@@ -290,6 +291,7 @@ lint = [
 requires-dist = [
     { name = "fastapi", specifier = ">=0.115.13" },
     { name = "httpx", specifier = ">=0.28.1" },
+    { name = "ruff", specifier = ">=0.12.1" },
     { name = "uvicorn", specifier = ">=0.34.3" },
 ]
 
