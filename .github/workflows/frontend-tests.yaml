@@ -77,16 +77,16 @@ jobs:
           recreate: true
           path: code-coverage-results.md
 
-      # - name: Build Docker image
-      #   run: docker build -t backend:latest .
-      #
-      # - name: Generate Vulnerability Scan Report
-      #   uses: aquasecurity/trivy-action@0.28.0
-      #   with:
-      #     image-ref: "backend:latest"
-      #     format: "table"
-      #     exit-code: "0"
-      #     # exit-code: "1"  # Fail the workflow if vulnerabiItites are found.
-      #     ignore-unfixed: true
-      #     vuln-type: "os,library"
-      #     severity: "CRITICAL,HIGH"
+      - name: Build Docker image
+        run: docker build -t frontend:latest .
+
+      - name: Generate Vulnerability Scan Report
+        uses: aquasecurity/trivy-action@0.28.0
+        with:
+          image-ref: "frontend:latest"
+          format: "table"
+          exit-code: "0"
+          # exit-code: "1"  # Fail the workflow if vulnerabiItites are found.
+          ignore-unfixed: true
+          vuln-type: "os,library"
+          severity: "CRITICAL,HIGH"
