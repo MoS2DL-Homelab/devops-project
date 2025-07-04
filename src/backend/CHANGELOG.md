@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/MoS2DL-Homelab/devops-project/compare/backend-v0.1.0...backend-v0.2.0) (2025-07-04)
+
+
+### Features
+
+* **backend:** add container image build and push ([#14](https://github.com/MoS2DL-Homelab/devops-project/issues/14)) ([3269aa5](https://github.com/MoS2DL-Homelab/devops-project/commit/3269aa555c76c84e95ec789a5e31c2a7ff2092c2))
+
 ## 0.1.0 (2025-07-01)
 
 
