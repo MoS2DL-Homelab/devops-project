@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/mos2dl-homelab/devops-project/compare/backend-v0.2.1...backend-v0.2.2) (2025-07-04)
+
+
+### Bug Fixes
+
+* **backend:** simulate fix 3 ([#19](https://github.com/mos2dl-homelab/devops-project/issues/19)) ([f96f1d1](https://github.com/mos2dl-homelab/devops-project/commit/f96f1d115ffa06cae1e2bc43a425a1cfa15fc253))
+
 ## [0.2.1](https://github.com/MoS2DL-Homelab/devops-project/compare/backend-v0.2.0...backend-v0.2.1) (2025-07-04)
 
 
