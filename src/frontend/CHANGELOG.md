@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.2](https://github.com/mos2dl-homelab/devops-project/compare/frontend-v0.2.1...frontend-v0.2.2) (2025-07-05)
+
+
+### Bug Fixes
+
+* **frontend:** simulate frontend fix ([#34](https://github.com/mos2dl-homelab/devops-project/issues/34)) ([3412570](https://github.com/mos2dl-homelab/devops-project/commit/3412570f4d09f3352cb02c3989eb56f4faee663e))
+
 ## [0.2.1](https://github.com/mos2dl-homelab/devops-project/compare/frontend-v0.2.0...frontend-v0.2.1) (2025-07-05)
 
 
