@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.0](https://github.com/mos2dl/devops-tests/compare/frontend-v0.3.0...frontend-v0.4.0) (2025-07-05)
+
+
+### Features
+
+* **frontend:** add frontend feature sim ([#40](https://github.com/mos2dl/devops-tests/issues/40)) ([bb329cb](https://github.com/mos2dl/devops-tests/commit/bb329cbd05f562fd7eb719a601ce259b598de998))
+
 ## [0.3.0](https://github.com/mos2dl/devops-tests/compare/frontend-v0.2.2...frontend-v0.3.0) (2025-07-05)
 
 
