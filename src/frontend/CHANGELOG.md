@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.4.2](https://github.com/mos2dl/devops-tests/compare/frontend-v0.4.1...frontend-v0.4.2) (2025-07-05)
+
+
+### Bug Fixes
+
+* **frontend:** add frontend fix simulation ([#45](https://github.com/mos2dl/devops-tests/issues/45)) ([d5af2b8](https://github.com/mos2dl/devops-tests/commit/d5af2b843f5e8d676fb4506c86bca53ff43d2645))
+
 ## [0.4.1](https://github.com/mos2dl/devops-tests/compare/frontend-v0.4.0...frontend-v0.4.1) (2025-07-05)
 
 
